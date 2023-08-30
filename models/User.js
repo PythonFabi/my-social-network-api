@@ -17,7 +17,13 @@ const userSchema = new Schema(
                     const emailRegex = /^[^\s@]+
                 }
             }
-        }
+        },
+        thoughts: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'Thought',
+            },
+        ],
 
     }
 )
