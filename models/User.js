@@ -14,9 +14,9 @@ const userSchema = new Schema(
             unique: true,
             validate: {
                 validator: function (value) {
-                    const emailRegex = /^[^\s@]+
-                }
-            }
+                    return /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/.test(value);
+                },
+            },
         },
         thoughts: [
             {
@@ -24,6 +24,27 @@ const userSchema = new Schema(
                 ref: 'Thought',
             },
         ],
-
+        friends: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'User',
+            },
+        ],
+    },
+    {
+        toJSON: {
+            virtuals: true,
+        },
+        id: false,
     }
-)
+);
+
+userSchema
+   .virtuals('friendCount')
+   .get(function () {
+    return this.friends.length;
+   });
+
+const User = model('user', userSchema);
+
+module.exports = User;
