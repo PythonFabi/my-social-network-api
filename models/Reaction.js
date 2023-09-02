@@ -28,4 +28,8 @@ const reactionSchema = new Schema(
     }
 );
 
+reactionSchema.path('createdAt').get(function (timestamp) {
+    return format(timestamp, "do MMMM, yyyy 'at' h:mmaa");
+});
+
 module.exports = reactionSchema;

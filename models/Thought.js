@@ -34,6 +34,11 @@ thoughtSchema
     return this.reactions.length;
    });
 
+
+   thoughtSchema.path('createdAt').get(function (timestamp) {
+    return format(timestamp, "do MMMM, yyyy 'at' h:mmaa");
+});
+
 const Thought = model('thought', thoughtSchema);
 
 module.exports = Thought;
