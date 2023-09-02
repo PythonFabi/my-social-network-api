@@ -95,7 +95,7 @@ module.exports = {
             }
 
             res.json(thought);
-        } catch {
+        } catch (err) {
             res.status(500).json(err);
         }
     },
