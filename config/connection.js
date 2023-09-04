@@ -1,3 +1,4 @@
+// import connection to mongoose
 const { connect, connection } = require('mongoose');
 
 // URL for mongodb connection to the socialNetworkDb
