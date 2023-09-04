@@ -19,9 +19,9 @@ Firstly run 'npm install' to install the necessary dependencies.
 Then, run 'npm run start' to start the application!
 In the thunderclient, postman or insomnia, test the given routes:
 
-Get request, get by id, put to update, post to create and delete on the categories, products and tags.
+Find, create, update and delete users and thoughts, and also react to existing thoughts, delete those reactions, also add and remove friends.
 
-Enjoy managing your ecommmerce!
+Enjoy sharing your thoughts!
 
 ## Credits
 
