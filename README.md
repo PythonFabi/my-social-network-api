@@ -1,13 +1,11 @@
 # My Social Network API
 
-[Walkthrough Video](https://drive.google.com/file/d/1FfFFYJheWD2tk9HWz4Ra5fbUFJvjF424/view)
-
 ## Description
 
-Welcome to the ecommerce backend application. This application uses Object-relational mapping to create and manage sql tables for the backend of an ecommerce.
-This project is built for people who want to manage their ecommerce business, it let's you easily receive, create, update and delete products, categories and product tags.
-I learned how to use object-relational mapping (ORM) to write the schemas for tables and to connect those in a express application.
-Use this app to manage your ecommerce!
+Welcome to the social network api. This is an express app, which uses the NoSQL database MongoDB.
+This application allows users to share their thoughts, react to them and add friends across the application, it let's you easily receive, create, update and delete users, thoughts, and let's you add and remove friends and reactions to thoughts.
+I learned here how to use a NoSQL database like MongoDB, creating models and schemas, and interacting with those with controller functions.
+Share your thoughts!
 
 ## Installation
 
@@ -15,9 +13,10 @@ Install the following dependencies: mongoose, express and date-fns.
 
 ## Usage
 
+[Walkthrough Video](https://drive.google.com/file/d/1FfFFYJheWD2tk9HWz4Ra5fbUFJvjF424/view)
 
-Firstly, configure your .env file, with your user, password and the database name. Then you have to run the schema.sql file inside the db folder to create the ecommerce_db. Next step would be to seed the database with running 'node seeds/index.js'. 
-After doing that, run server.js, which will run the server on localhost:3001. 
+Firstly run 'npm install' to install the necessary dependencies.
+Then, run 'npm run start' to start the application!
 In the thunderclient, postman or insomnia, test the given routes:
 
 Get request, get by id, put to update, post to create and delete on the categories, products and tags.
