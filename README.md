@@ -13,6 +13,7 @@ Install the following dependencies: mongoose, express and date-fns.
 
 ## Usage
 
+The walkthrough video will walk you through the routes the application provides to interact with users and thoughts:
 [Walkthrough Video](https://drive.google.com/file/d/1FfFFYJheWD2tk9HWz4Ra5fbUFJvjF424/view)
 
 Firstly run 'npm install' to install the necessary dependencies.
